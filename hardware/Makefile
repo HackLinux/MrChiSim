@@ -1,0 +1,55 @@
+# Target Compiler
+CC = g++
+SBT = sbt
+
+# Compiler Flags:
+HARDFLAGS = --backend v --genHarness
+SSIMFLAGS = --backend c --genHarness
+CSIMFLAGS = -std=c++11
+SIMTESTFLAGS = --backend c --genHarness --compile --test
+
+# Make Commands
+default: fastCSim
+
+test: testSim testCon testAvro
+
+# Test Hardware Design
+testSim: SBTCompile
+	$(SBT) "run-main chibi.sim.ChibiSimulation $(SIMTESTFLAGS)"
+
+testCon: SBTCompile
+	$(SBT) "run-main chibi.controller.Controller $(SIMTESTFLAGS)"
+
+testAvro: SBTCompile
+	$(SBT) "run-main chibi.test.AvroTest $(SIMTESTFLAGS)"
+
+# Chisel Make Commands
+fastCSim: fastSimScript
+	$(CC) -o ChibiSimulation ChibiSimulation.cpp ChibiSimulation-emulator.cpp
+	cp ChibiSimulation /tmp/.
+
+robustCSim: robustSimScript
+	$(CC) -o ChibiSimulation ChibiSimulation.cpp ChibiSimulation-emulator.cpp
+	cp ChibiSimulation /tmp/.
+
+fastSimScript: SSim
+	../scripts/fastSimulationScript.py
+
+robustSimScript: SSim
+	../scripts/robustSimulationScript.py
+
+SSim: SBTCompile
+	$(SBT) "run-main chibi.sim.ChibiSimulation $(SSIMFLAGS)"
+
+SBTCompile:
+	$(SBT) compile
+
+# Clean Up	
+clean:
+	$(SBT) clean
+	$(RM) -r project
+	$(RM) *.cpp *.o *.h
+	$(RM) ChibiSimulation*
+	$(RM) /tmp/ChibiSimulation
+	$(RM) Controller*
+	$(RM) *Test*
