@@ -4,12 +4,10 @@ import Reduction._
 import scala.util.Random
 import scala.sys.process._
 
-class ChibiJNI {
-  // --- Native Send Methods
-  @native def hexSend(hex : String, index : Int) : Int
-
-  // --- Native Read Methods
-  @native def hexRead(index : Int) : String
+class MrChiSim {
+  @native def doFPGA(in : String, index : String) : String;
+  @native def create() : Int
+  @native def destroy() : Int
 
 }
 
@@ -27,24 +25,15 @@ object WordCount extends ScoobiApp {
 
 	def WordMapper(w : String) : (String, Int) = {
 
-		// val startSim = Process("/tmp/start-sim.sh")
-		// startSim.run
+		System.loadLibrary("MrChiSim")
+		val chi = new MrChiSim
 
-		System.loadLibrary("ChibiJNI")
-		val chi = new ChibiJNI
+	    val index = Random.nextInt().abs.toString.takeRight(8)
 
-		val index = Random.nextInt(100)
-    
-	    // THIS IS NOT FAST BUT ENSURE CORRECT OPERATION
-	    // val i = Random.nextInt()
-	    // Create Unique Filename
-	    // val md = time{java.security.MessageDigest.getInstance("SHA-1")}
-	    // val filename = time{md.digest((i.toString+"OMGHAXLOL").getBytes("UTF-8")).map("%02x".format(_)).mkString.take(8)}
-
-	   	chi.hexSend(index + " " + asciiToHex(w), index)
-	    val res = chi.hexRead(index)
-
-
+	    chi.create();
+	    val res = chi.doFPGA(asciiToHex(w), index)
+	    chi.destroy();
+	    
 		val word = hexToAscii(res.split(" ")(1).split("x")(1)).trim
 		val num = hexToInt(res.split(" ")(2).split("x")(1))
 

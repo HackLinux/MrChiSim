@@ -2,18 +2,13 @@
 SBT = sbt
 
 # Make Commands
-default: makeFastHardware makeFastJNI ScriptSetup
+default: makeHardware makeJNI ScriptSetup
 
-test: testFastHardware clean testRobustHardware clean testFastJNI clean testRobustJNI clean testFastScoobi clean testRobustScoobi clean
+test: testHardware clean testJNI clean testScoobi clean
 
 
 # Test Make Commands
-testFastJNI: makeFastHardware makeFastJNI ScriptSetup
-	/tmp/start-sim.sh
-	cd jni; make run
-	/tmp/stop-sim.sh
-
-testRobustJNI: makeRobustHardware makeRobustJNI ScriptSetup
+testJNI: makeHardware makeJNI ScriptSetup
 	/tmp/start-sim.sh
 	cd jni; make run
 	/tmp/stop-sim.sh
@@ -21,25 +16,22 @@ testRobustJNI: makeRobustHardware makeRobustJNI ScriptSetup
 testHardware:
 	cd hardware; make test
 
-testFastScoobi: makeFastJNI makeFastHardware ScriptSetup
+testScoobi: makeJNI makeHardware ScriptSetup
 	cd examples/scoobi; make test
 
-testRobustScoobi: makeRobustJNI makeRobustHardware ScriptSetup
-	cd examples/scoobi; make test
+testHadoopWordCount: makeJNI makeHardware ScriptSetup
+	/tmp/start-sim.sh
+	cd examples/hadoop/wordcount; make run
+	/tmp/stop-sim.sh
 
 #Hardware Make Command
-makeFastHardware:
+makeHardware:
 	cd hardware; make
 
-makeRobustHardware:
-	cd hardware; make robustCSim
-
 #JNI Make Command
-makeFastJNI:
+makeJNI:
 	cd jni; make
 
-makeRobustJNI:
-	cd jni; make robustJNI
 
 #SCOOBI Make Command
 makeScoobi:
@@ -50,9 +42,11 @@ ScriptSetup:
 
 # Clean Up	
 clean:
+	/tmp/stop-sim.sh
 	$(SBT) clean
 	cd jni; make clean
 	cd hardware; make clean
 	cd examples/scoobi; make clean
+	cd examples/hadoop/wordcount; make clean
 	$(RM) /tmp/*sim.sh
 	$(RM) -r project

@@ -9,9 +9,12 @@ CSIMFLAGS = -std=c++11
 SIMTESTFLAGS = --backend c --genHarness --compile --test
 
 # Make Commands
-default: fastCSim
+default: CSim
 
 test: testSim testCon testAvro
+
+run:
+	../scripts/start-sim.sh
 
 # Test Hardware Design
 testSim: SBTCompile
@@ -24,19 +27,13 @@ testAvro: SBTCompile
 	$(SBT) "run-main chibi.test.AvroTest $(SIMTESTFLAGS)"
 
 # Chisel Make Commands
-fastCSim: fastSimScript
+
+CSim: SimScript
 	$(CC) -o ChibiSimulation ChibiSimulation.cpp ChibiSimulation-emulator.cpp
 	cp ChibiSimulation /tmp/.
 
-robustCSim: robustSimScript
-	$(CC) -o ChibiSimulation ChibiSimulation.cpp ChibiSimulation-emulator.cpp
-	cp ChibiSimulation /tmp/.
-
-fastSimScript: SSim
-	../scripts/fastSimulationScript.py
-
-robustSimScript: SSim
-	../scripts/robustSimulationScript.py
+SimScript: SSim
+	../scripts/SimulationScript.py
 
 SSim: SBTCompile
 	$(SBT) "run-main chibi.sim.ChibiSimulation $(SSIMFLAGS)"
