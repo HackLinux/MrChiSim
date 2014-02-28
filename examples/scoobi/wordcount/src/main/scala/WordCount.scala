@@ -16,8 +16,8 @@ object WordCount extends ScoobiApp {
 		val lines = fromTextFile(args(0))
 
 		val counts = lines.mapFlatten(_.split(" ").filter(_.length() > 1))
-		  .map(WordMapper(_))
-		  // .map(word => (word, 1))
+		  //.map(WordMapper(_))
+		  .map(word => (word, 1))
 		  .groupByKey
 		  .combine(Sum.int)
 		counts.toTextFile(args(1)).persist

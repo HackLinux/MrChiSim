@@ -28,9 +28,8 @@ testAvro: SBTCompile
 
 # Chisel Make Commands
 
-CSim: SimScript
-	$(CC) -o ChibiSimulation ChibiSimulation.cpp ChibiSimulation-emulator.cpp
-	cp ChibiSimulation /tmp/.
+CSim:
+	cp ChibiSimulation /usr/bin/.
 
 SimScript: SSim
 	../scripts/SimulationScript.py

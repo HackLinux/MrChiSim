@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Vendor: org.scalacheck
+Implementation-Title: scalacheck
+Implementation-Version: 1.10.0
+Implementation-Vendor-Id: org.scalacheck
+Specification-Vendor: org.scalacheck
+Specification-Title: scalacheck
+Implementation-URL: http://www.scalacheck.org
+Specification-Version: 1.10.0
+

@@ -21,8 +21,7 @@ run: jni
 # Java JNI
 jni: header
 	$(CC) $(LIBFLAGS) $(CFLAGS) $(INCFLAGS) MrChiSim.cpp -o libMrChiSim.so
-	cp libMrChiSim.so /usr/local/hadoop/lib/native/.
-	cp libMrChiSim.so /tmp/.
+	cp libMrChiSim.so /usr/lib/.
 	mkdir -p /tmp/fifo
 
 header: compile

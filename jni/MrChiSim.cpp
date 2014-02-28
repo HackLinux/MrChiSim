@@ -29,13 +29,13 @@ void send(char* val, char* ind) {
 	char flagName[100];
 	sprintf(flagName, "%s%d", FLAG_NAME, name);
 
+	// Create Read FLAG
 	int flag = open(flagName, O_RDWR | O_CREAT);
+
 	// Open FIFO - BLOCKING
 	int fd = open(inName, O_WRONLY);
-	 if (fd == -1) {
-		perror("FPGA: Error opening file for writing");
-		exit(EXIT_FAILURE);
-	}
+	
+	// Close and Remove Read FLAG
 	close(flag);
 	unlink(flagName);
 

@@ -1,0 +1,20 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1373200258230
+Bundle-ManifestVersion: 2
+Bundle-Name: org.scalaz.typelevel
+Bundle-SymbolicName: org.scalaz.typelevel
+Bundle-Version: 7.0.2
+Created-By: 1.7.0_40 (Oracle Corporation)
+Export-Package: scalaz.typelevel;uses:="scala.reflect,scalaz,scala,scala
+ .runtime,scalaz.syntax,scalaz.typelevel.formatters.string,scala.collect
+ ion.immutable,scala.collection,scalaz.syntax.typelevel";version="7.0.2"
+ ,scalaz.typelevel.formatters.string;uses:="scala.collection,scala.colle
+ ction.immutable,scalaz.typelevel,scala.collection.mutable,scala.runtime
+ ,scala,scala.reflect,scala.math,scalaz";version="7.0.2",scalaz.syntax.t
+ ypelevel;uses:="scala.reflect,scalaz.typelevel,scala.runtime";version="
+ 7.0.2"
+Import-Package: scala;version="[2.10,3)",scala.collection;version="[2.10
+ ,3)",scala.collection.immutable;version="[2.10,3)",scala.collection.mut
+ able;version="[2.10,3)",scala.math;version="[2.10,3)",scala.reflect;ver
+ sion="[2.10,3)",scala.runtime;version="[2.10,3)",scalaz,scalaz.syntax
+Tool: Bnd-1.50.0

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="default"
+		module="hardware_2.10"
+		revision="0.1-SNAPSHOT"
+		conf="compile-internal"
+		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
+		date="20140217165430"/>
+	<dependencies>
+		<module organisation="edu.berkeley.cs" name="chisel_2.10">
+			<revision name="2.1" status="release" pubdate="20131218101828" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://chisel.eecs.berkeley.edu/" downloaded="false" searched="true" default="false" conf="default(compile), default, compile, runtime, master" position="2">
+				<license name="BSD-style" url="http://www.opensource.org/licenses/bsd-license.php"/>
+				<metadata-artifact status="no" details="" size="2884" time="0" location="/home/duncan/.ivy2/cache/edu.berkeley.cs/chisel_2.10/ivy-2.1.xml" searched="true" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/edu/berkeley/cs/chisel_2.10/2.1/chisel_2.10-2.1.pom"/>
+				<caller organisation="default" name="hardware_2.10" conf="optional, compile, provided, compile-internal" rev="latest.release" rev-constraint-default="latest.release" rev-constraint-dynamic="latest.release" callerrev="0.1-SNAPSHOT"/>
+				<artifacts>
+					<artifact name="chisel_2.10" type="jar" ext="jar" status="no" details="" size="1178415" time="0" location="/home/duncan/.ivy2/cache/edu.berkeley.cs/chisel_2.10/jars/chisel_2.10-2.1.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/edu/berkeley/cs/chisel_2.10/2.1/chisel_2.10-2.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-library">
+			<revision name="2.10.3" status="release" pubdate="20130927194454" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master, default(compile), default" position="3">
+				<license name="BSD-like" url="http://www.scala-lang.org/downloads/license.html          "/>
+				<metadata-artifact status="no" details="" size="2487" time="0" location="/home/duncan/.ivy2/cache/org.scala-lang/scala-library/ivy-2.10.3.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/scala-lang/scala-library/2.10.3/scala-library-2.10.3.pom"/>
+				<caller organisation="edu.berkeley.cs" name="chisel_2.10" conf="default, compile, runtime, master" rev="2.10.3" rev-constraint-default="2.10.3" rev-constraint-dynamic="2.10.3" callerrev="2.1"/>
+				<caller organisation="default" name="hardware_2.10" conf="optional, compile, provided, compile-internal" rev="2.10.2" rev-constraint-default="2.10.2" rev-constraint-dynamic="2.10.2" callerrev="0.1-SNAPSHOT"/>
+				<caller organisation="com.github.scct" name="scct_2.10" conf="compile, runtime" rev="2.10.2" rev-constraint-default="2.10.2" rev-constraint-dynamic="2.10.2" callerrev="0.2.1"/>
+				<artifacts>
+					<artifact name="scala-library" type="jar" ext="jar" status="no" details="" size="7126003" time="0" location="/home/duncan/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.10.3.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/scala-lang/scala-library/2.10.3/scala-library-2.10.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="2.10.2" status="release" pubdate="20130607040543" resolver="sbt-chain" artresolver="sbt-chain" evicted="latest-revision" evicted-reason="" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, master(*), compile(*), runtime, runtime(*), master" position="-1">
+				<license name="BSD-like" url="http://www.scala-lang.org/downloads/license.html          "/>
+				<metadata-artifact status="no" details="" size="2487" time="0" location="/home/duncan/.ivy2/cache/org.scala-lang/scala-library/ivy-2.10.2.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/scala-lang/scala-library/2.10.2/scala-library-2.10.2.pom"/>
+				<evicted-by rev="2.10.3"/>
+				<caller organisation="default" name="hardware_2.10" conf="optional, compile, provided, compile-internal" rev="2.10.2" rev-constraint-default="2.10.2" rev-constraint-dynamic="2.10.2" callerrev="0.1-SNAPSHOT"/>
+				<caller organisation="com.github.scct" name="scct_2.10" conf="compile, runtime" rev="2.10.2" rev-constraint-default="2.10.2" rev-constraint-dynamic="2.10.2" callerrev="0.2.1"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.github.scct" name="sbt-scct">
+			<revision name="0.2.1" status="release" pubdate="20131029031518" resolver="public" artresolver="public" homepage="http://scct.github.io/scct/" extra-sbtVersion="0.13" extra-scalaVersion="2.10" downloaded="true" searched="true" default="false" conf="default(compile), default, compile, runtime, master" position="0">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="successful" details="" size="1944" time="929" location="/home/duncan/.ivy2/cache/scala_2.10/sbt_0.13/com.github.scct/sbt-scct/ivy-0.2.1.xml" searched="true" original-local-location="/home/duncan/.ivy2/cache/scala_2.10/sbt_0.13/com.github.scct/sbt-scct/ivy-0.2.1.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/github/scct/sbt-scct_2.10_0.13/0.2.1/sbt-scct-0.2.1.pom"/>
+				<caller organisation="default" name="hardware_2.10" conf="optional, compile, provided, compile-internal" rev="0.2.1" rev-constraint-default="0.2.1" rev-constraint-dynamic="0.2.1" callerrev="0.1-SNAPSHOT" extra-sbtVersion="0.13" extra-scalaVersion="2.10"/>
+				<artifacts>
+					<artifact name="sbt-scct" type="jar" ext="jar" status="successful" details="" size="37181" time="1501" location="/home/duncan/.ivy2/cache/scala_2.10/sbt_0.13/com.github.scct/sbt-scct/jars/sbt-scct-0.2.1.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/github/scct/sbt-scct_2.10_0.13/0.2.1/sbt-scct-0.2.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.github.scct" name="scct_2.10">
+			<revision name="0.2.1" status="release" pubdate="20131028214709" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://scct.github.com/scct" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="1">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="2987" time="0" location="/home/duncan/.ivy2/cache/com.github.scct/scct_2.10/ivy-0.2.1.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/github/scct/scct_2.10/0.2.1/scct_2.10-0.2.1.pom"/>
+				<caller organisation="edu.berkeley.cs" name="chisel_2.10" conf="default, compile, runtime, master" rev="0.2.1" rev-constraint-default="0.2.1" rev-constraint-dynamic="0.2.1" callerrev="2.1"/>
+				<caller organisation="com.github.scct" name="sbt-scct" conf="default, compile, runtime, master" rev="0.2.1" rev-constraint-default="0.2.1" rev-constraint-dynamic="0.2.1" callerrev="0.2.1"/>
+				<artifacts>
+					<artifact name="scct_2.10" type="jar" ext="jar" status="no" details="" size="232243" time="0" location="/home/duncan/.ivy2/cache/com.github.scct/scct_2.10/jars/scct_2.10-0.2.1.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/github/scct/scct_2.10/0.2.1/scct_2.10-0.2.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>

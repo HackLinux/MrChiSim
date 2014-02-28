@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Implementation-Vendor: com.nicta
+Implementation-Title: scoobi
+Implementation-Version: 0.8.0
+Implementation-Vendor-Id: com.nicta
+Vcs-Release-Hash: d2029fc333d7b44f84f230ece7e2031039812d7d
+Specification-Vendor: com.nicta
+Specification-Title: scoobi
+Specification-Version: 0.8.0
+Main-Class: com.nicta.scoobi.application.ScoobiRepl
+

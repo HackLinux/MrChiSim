@@ -9,9 +9,9 @@ test: testHardware clean testJNI clean testScoobi clean
 
 # Test Make Commands
 testJNI: makeHardware makeJNI ScriptSetup
-	/tmp/start-sim.sh
+	/usr/bin/start-sim.sh
 	cd jni; make run
-	/tmp/stop-sim.sh
+	/usr/bin/stop-sim.sh
 
 testHardware:
 	cd hardware; make test
@@ -20,9 +20,9 @@ testScoobi: makeJNI makeHardware ScriptSetup
 	cd examples/scoobi; make test
 
 testHadoopWordCount: makeJNI makeHardware ScriptSetup
-	/tmp/start-sim.sh
+	/usr/bin/start-sim.sh
 	cd examples/hadoop/wordcount; make run
-	/tmp/stop-sim.sh
+	/usr/bn/stop-sim.sh
 
 #Hardware Make Command
 makeHardware:
@@ -38,7 +38,7 @@ makeScoobi:
 	cd examples/scoobi; make
 
 ScriptSetup:
-	cp ./scripts/*-sim.sh /tmp/.
+	cp ./scripts/*-sim.sh /usr/bin/.
 
 # Clean Up	
 clean:

@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Implementation-Vendor: com.googlecode.kiama
+Implementation-Title: kiama
+Implementation-Version: 1.5.2
+Implementation-Vendor-Id: com.googlecode.kiama
+Specification-Vendor: com.googlecode.kiama
+Specification-Title: kiama
+Specification-Version: 1.5.2
+

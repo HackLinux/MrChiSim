@@ -1,0 +1,14 @@
+[0m[[0minfo[0m] [0mRunning chibi.sim.ChibiSimulation --backend c --genHarness[0m
+[0m[[0mdebug[0m] [0mStarting sandboxed run...[0m
+[0m[[0mdebug[0m] [0mWaiting for threads to exit or System.exit to be called.[0m
+[0m[[0mdebug[0m] [0m  Classpath:[0m
+[0m[[0mdebug[0m] [0m	/home/duncan/repos/mrchisim/hardware/target/scala-2.10/classes[0m
+[0m[[0mdebug[0m] [0m	/home/duncan/.ivy2/cache/scala_2.10/sbt_0.13/com.github.scct/sbt-scct/jars/sbt-scct-0.2.1.jar[0m
+[0m[[0mdebug[0m] [0m	/home/duncan/.ivy2/cache/com.github.scct/scct_2.10/jars/scct_2.10-0.2.1.jar[0m
+[0m[[0mdebug[0m] [0m	/home/duncan/.ivy2/cache/edu.berkeley.cs/chisel_2.10/jars/chisel_2.10-2.1.jar[0m
+[0m[[0mdebug[0m] [0m	/home/duncan/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.10.3.jar[0m
+[0m[[0mdebug[0m] [0mWaiting for thread run-main to exit[0m
+[0m[[0mdebug[0m] [0m	Thread run-main exited.[0m
+[0m[[0mdebug[0m] [0mInterrupting remaining threads (should be all daemons).[0m
+[0m[[0mdebug[0m] [0mSandboxed run complete..[0m
+[0m[[0mdebug[0m] [0mExited with code 0[0m

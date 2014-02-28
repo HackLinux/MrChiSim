@@ -1,0 +1,350 @@
+[0m[[0minfo[0m] [0mUpdating {file:/home/duncan/repos/mrchisim/hardware/}hardware...[0m
+[0m[[0mdebug[0m] [0m:: resolving dependencies :: default#hardware_2.10;0.1-SNAPSHOT[0m
+[0m[[0mdebug[0m] [0m	confs: [compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool][0m
+[0m[[0mdebug[0m] [0m	validate = true[0m
+[0m[[0mdebug[0m] [0m	refresh = false[0m
+[0m[[0mdebug[0m] [0mresolving dependencies for configuration 'compile'[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#hardware_2.10;0.1-SNAPSHOT [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#hardware_2.10;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.2 [compile->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving org.scala-lang#scala-library;2.10.2 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@dd69450[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-library;2.10.2[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-lang#scala-library;2.10.2[0m
+[0m[[0mdebug[0m] [0m	found org.scala-lang#scala-library;2.10.2 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#hardware_2.10;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.2 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#hardware_2.10;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.2 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#hardware_2.10;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.2 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#hardware_2.10;0.1-SNAPSHOT->com.github.scct#sbt-scct;0.2.1 [compile->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving com.github.scct#sbt-scct;0.2.1 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.github.scct#sbt-scct;0.2.1 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0m		tried /home/duncan/.ivy2/local/com.github.scct/sbt-scct/scala_2.10/sbt_0.13/0.2.1/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	local: no ivy file found for com.github.scct#sbt-scct;0.2.1[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/github/scct/sbt-scct_2.10_0.13/0.2.1/sbt-scct-0.2.1.pom[0m
+[0m[[0mdebug[0m] [0m	public: found md file for com.github.scct#sbt-scct;0.2.1[0m
+[0m[[0mdebug[0m] [0m		=> http://repo1.maven.org/maven2/com/github/scct/sbt-scct_2.10_0.13/0.2.1/sbt-scct-0.2.1.pom (0.2.1)[0m
+[0m[[0mdebug[0m] [0mdownloading http://repo1.maven.org/maven2/com/github/scct/sbt-scct_2.10_0.13/0.2.1/sbt-scct-0.2.1.pom ...[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/github/scct/sbt-scct_2.10_0.13/0.2.1/sbt-scct-0.2.1.pom[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/github/scct/sbt-scct_2.10_0.13/0.2.1/sbt-scct-0.2.1.pom.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/com/github/scct/sbt-scct_2.10_0.13/0.2.1/sbt-scct-0.2.1.pom[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.github.scct#sbt-scct;0.2.1!sbt-scct.pom(pom.original) (929ms)[0m
+[0m[[0mdebug[0m] [0m		tried /home/duncan/.ivy2/local/com.github.scct/sbt-scct/0.2.1/jars/sbt-scct.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/github/scct/sbt-scct/0.2.1/sbt-scct-0.2.1.jar[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=http://repo1.maven.org/maven2/com/github/scct/sbt-scct/0.2.1/sbt-scct-0.2.1.jar[0m
+[0m[[0mdebug[0m] [0m	found com.github.scct#sbt-scct;0.2.1 in public[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#hardware_2.10;0.1-SNAPSHOT->com.github.scct#sbt-scct;0.2.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#hardware_2.10;0.1-SNAPSHOT->com.github.scct#sbt-scct;0.2.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scct#sbt-scct;0.2.1->com.github.scct#scct_2.10;0.2.1 [compile->master(*)][0m
+[0m[[0minfo[0m] [0mResolving com.github.scct#scct_2.10;0.2.1 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.github.scct#scct_2.10;0.2.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.github.scct#scct_2.10;0.2.1[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: com.github.scct#scct_2.10;0.2.1[0m
+[0m[[0mdebug[0m] [0m	found com.github.scct#scct_2.10;0.2.1 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scct#sbt-scct;0.2.1->com.github.scct#scct_2.10;0.2.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scct#scct_2.10;0.2.1->org.scala-lang#scala-library;2.10.2 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scct#scct_2.10;0.2.1->org.scala-lang#scala-library;2.10.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scct#sbt-scct;0.2.1->com.github.scct#scct_2.10;0.2.1 [compile->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scct#sbt-scct;0.2.1->com.github.scct#scct_2.10;0.2.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scct#scct_2.10;0.2.1->org.scala-lang#scala-library;2.10.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scct#scct_2.10;0.2.1->org.scala-lang#scala-library;2.10.2 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scct#sbt-scct;0.2.1->com.github.scct#scct_2.10;0.2.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scct#sbt-scct;0.2.1->com.github.scct#scct_2.10;0.2.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#hardware_2.10;0.1-SNAPSHOT->com.github.scct#sbt-scct;0.2.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#hardware_2.10;0.1-SNAPSHOT->edu.berkeley.cs#chisel_2.10;latest.release [compile->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving edu.berkeley.cs#chisel_2.10;latest.release ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: edu.berkeley.cs#chisel_2.10;latest.release {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mdefault-cache: cached resolved revision expired for edu.berkeley.cs#chisel_2.10;latest.release[0m
+[0m[[0mdebug[0m] [0mdefault-cache: cached resolved revision expired for edu.berkeley.cs#chisel_2.10;latest.release[0m
+[0m[[0mdebug[0m] [0m		tried /home/duncan/.ivy2/local/edu.berkeley.cs/chisel_2.10/[revision]/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	local: no ivy file found for edu.berkeley.cs#chisel_2.10;latest.release[0m
+[0m[[0mdebug[0m] [0mdefault-cache: cached resolved revision expired for edu.berkeley.cs#chisel_2.10;latest.release[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/edu/berkeley/cs/chisel_2.10/[revision]/chisel_2.10-[revision].pom[0m
+[0m[[0mdebug[0m] [0m	public: found md file for edu.berkeley.cs#chisel_2.10;latest.release[0m
+[0m[[0mdebug[0m] [0m		=> http://repo1.maven.org/maven2/edu/berkeley/cs/chisel_2.10/2.1/chisel_2.10-2.1.pom (2.1)[0m
+[0m[[0mdebug[0m] [0m	default-cache: revision in cache: edu.berkeley.cs#chisel_2.10;2.1[0m
+[0m[[0mdebug[0m] [0m	found edu.berkeley.cs#chisel_2.10;2.1 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m	[2.1] edu.berkeley.cs#chisel_2.10;latest.release[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#hardware_2.10;0.1-SNAPSHOT->edu.berkeley.cs#chisel_2.10;latest.release [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#hardware_2.10;0.1-SNAPSHOT->edu.berkeley.cs#chisel_2.10;latest.release [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.berkeley.cs#chisel_2.10;latest.release->org.scala-lang#scala-library;2.10.3 [compile->master(*)][0m
+[0m[[0minfo[0m] [0mResolving org.scala-lang#scala-library;2.10.3 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-lang#scala-library;2.10.3 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-library;2.10.3[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-lang#scala-library;2.10.3[0m
+[0m[[0mdebug[0m] [0m	found org.scala-lang#scala-library;2.10.3 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.berkeley.cs#chisel_2.10;latest.release->org.scala-lang#scala-library;2.10.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.berkeley.cs#chisel_2.10;latest.release->org.scala-lang#scala-library;2.10.3 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.berkeley.cs#chisel_2.10;latest.release->org.scala-lang#scala-library;2.10.3 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.berkeley.cs#chisel_2.10;latest.release->org.scala-lang#scala-library;2.10.3 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.berkeley.cs#chisel_2.10;latest.release->org.scala-lang#scala-library;2.10.3 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.berkeley.cs#chisel_2.10;latest.release->org.scala-lang#scala-library;2.10.3 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.berkeley.cs#chisel_2.10;latest.release->org.scala-lang#scala-library;2.10.3 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.berkeley.cs#chisel_2.10;latest.release->org.scala-lang#scala-library;2.10.3 [compile->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.berkeley.cs#chisel_2.10;latest.release->org.scala-lang#scala-library;2.10.3 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.berkeley.cs#chisel_2.10;latest.release->com.github.scct#scct_2.10;0.2.1 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.berkeley.cs#chisel_2.10;latest.release->com.github.scct#scct_2.10;0.2.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.berkeley.cs#chisel_2.10;latest.release->org.scala-lang#scala-library;2.10.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.berkeley.cs#chisel_2.10;latest.release->org.scala-lang#scala-library;2.10.3 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.berkeley.cs#chisel_2.10;latest.release->com.github.scct#scct_2.10;0.2.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.berkeley.cs#chisel_2.10;latest.release->com.github.scct#scct_2.10;0.2.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#hardware_2.10;0.1-SNAPSHOT->edu.berkeley.cs#chisel_2.10;latest.release [compile->master][0m
+[0m[[0mdebug[0m] [0mresolving dependencies for configuration 'runtime'[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#hardware_2.10;0.1-SNAPSHOT [runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#hardware_2.10;0.1-SNAPSHOT [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#hardware_2.10;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.2 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#hardware_2.10;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.2 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#hardware_2.10;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.2 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#hardware_2.10;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.2 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#hardware_2.10;0.1-SNAPSHOT->com.github.scct#sbt-scct;0.2.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#hardware_2.10;0.1-SNAPSHOT->com.github.scct#sbt-scct;0.2.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#hardware_2.10;0.1-SNAPSHOT->com.github.scct#sbt-scct;0.2.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scct#sbt-scct;0.2.1->com.github.scct#scct_2.10;0.2.1 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scct#sbt-scct;0.2.1->com.github.scct#scct_2.10;0.2.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scct#scct_2.10;0.2.1->org.scala-lang#scala-library;2.10.2 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scct#scct_2.10;0.2.1->org.scala-lang#scala-library;2.10.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scct#sbt-scct;0.2.1->com.github.scct#scct_2.10;0.2.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scct#sbt-scct;0.2.1->com.github.scct#scct_2.10;0.2.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scct#scct_2.10;0.2.1->org.scala-lang#scala-library;2.10.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scct#scct_2.10;0.2.1->org.scala-lang#scala-library;2.10.2 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#hardware_2.10;0.1-SNAPSHOT->com.github.scct#sbt-scct;0.2.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#hardware_2.10;0.1-SNAPSHOT->edu.berkeley.cs#chisel_2.10;latest.release [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#hardware_2.10;0.1-SNAPSHOT->edu.berkeley.cs#chisel_2.10;latest.release [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#hardware_2.10;0.1-SNAPSHOT->edu.berkeley.cs#chisel_2.10;latest.release [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.berkeley.cs#chisel_2.10;latest.release->org.scala-lang#scala-library;2.10.3 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.berkeley.cs#chisel_2.10;latest.release->org.scala-lang#scala-library;2.10.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.berkeley.cs#chisel_2.10;latest.release->com.github.scct#scct_2.10;0.2.1 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.berkeley.cs#chisel_2.10;latest.release->com.github.scct#scct_2.10;0.2.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.berkeley.cs#chisel_2.10;latest.release->org.scala-lang#scala-library;2.10.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.berkeley.cs#chisel_2.10;latest.release->org.scala-lang#scala-library;2.10.3 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.berkeley.cs#chisel_2.10;latest.release->com.github.scct#scct_2.10;0.2.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.berkeley.cs#chisel_2.10;latest.release->com.github.scct#scct_2.10;0.2.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#hardware_2.10;0.1-SNAPSHOT->edu.berkeley.cs#chisel_2.10;latest.release [compile->master][0m
+[0m[[0mdebug[0m] [0mresolving dependencies for configuration 'test'[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#hardware_2.10;0.1-SNAPSHOT [test][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#hardware_2.10;0.1-SNAPSHOT [runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#hardware_2.10;0.1-SNAPSHOT [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#hardware_2.10;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.2 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#hardware_2.10;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.2 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#hardware_2.10;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.2 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#hardware_2.10;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.2 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#hardware_2.10;0.1-SNAPSHOT->com.github.scct#sbt-scct;0.2.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#hardware_2.10;0.1-SNAPSHOT->com.github.scct#sbt-scct;0.2.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#hardware_2.10;0.1-SNAPSHOT->com.github.scct#sbt-scct;0.2.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scct#sbt-scct;0.2.1->com.github.scct#scct_2.10;0.2.1 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scct#sbt-scct;0.2.1->com.github.scct#scct_2.10;0.2.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scct#scct_2.10;0.2.1->org.scala-lang#scala-library;2.10.2 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scct#scct_2.10;0.2.1->org.scala-lang#scala-library;2.10.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scct#sbt-scct;0.2.1->com.github.scct#scct_2.10;0.2.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scct#sbt-scct;0.2.1->com.github.scct#scct_2.10;0.2.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scct#scct_2.10;0.2.1->org.scala-lang#scala-library;2.10.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scct#scct_2.10;0.2.1->org.scala-lang#scala-library;2.10.2 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#hardware_2.10;0.1-SNAPSHOT->com.github.scct#sbt-scct;0.2.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#hardware_2.10;0.1-SNAPSHOT->edu.berkeley.cs#chisel_2.10;latest.release [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#hardware_2.10;0.1-SNAPSHOT->edu.berkeley.cs#chisel_2.10;latest.release [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#hardware_2.10;0.1-SNAPSHOT->edu.berkeley.cs#chisel_2.10;latest.release [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.berkeley.cs#chisel_2.10;latest.release->org.scala-lang#scala-library;2.10.3 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.berkeley.cs#chisel_2.10;latest.release->org.scala-lang#scala-library;2.10.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.berkeley.cs#chisel_2.10;latest.release->com.github.scct#scct_2.10;0.2.1 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.berkeley.cs#chisel_2.10;latest.release->com.github.scct#scct_2.10;0.2.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.berkeley.cs#chisel_2.10;latest.release->org.scala-lang#scala-library;2.10.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.berkeley.cs#chisel_2.10;latest.release->org.scala-lang#scala-library;2.10.3 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.berkeley.cs#chisel_2.10;latest.release->com.github.scct#scct_2.10;0.2.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.berkeley.cs#chisel_2.10;latest.release->com.github.scct#scct_2.10;0.2.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#hardware_2.10;0.1-SNAPSHOT->edu.berkeley.cs#chisel_2.10;latest.release [compile->master][0m
+[0m[[0mdebug[0m] [0mresolving dependencies for configuration 'provided'[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#hardware_2.10;0.1-SNAPSHOT [provided][0m
+[0m[[0mdebug[0m] [0mresolving dependencies for configuration 'optional'[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#hardware_2.10;0.1-SNAPSHOT [optional][0m
+[0m[[0mdebug[0m] [0mresolving dependencies for configuration 'compile-internal'[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#hardware_2.10;0.1-SNAPSHOT [compile-internal][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#hardware_2.10;0.1-SNAPSHOT [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#hardware_2.10;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.2 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#hardware_2.10;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.2 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#hardware_2.10;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.2 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#hardware_2.10;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.2 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#hardware_2.10;0.1-SNAPSHOT->com.github.scct#sbt-scct;0.2.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#hardware_2.10;0.1-SNAPSHOT->com.github.scct#sbt-scct;0.2.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#hardware_2.10;0.1-SNAPSHOT->com.github.scct#sbt-scct;0.2.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scct#sbt-scct;0.2.1->com.github.scct#scct_2.10;0.2.1 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scct#sbt-scct;0.2.1->com.github.scct#scct_2.10;0.2.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scct#scct_2.10;0.2.1->org.scala-lang#scala-library;2.10.2 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scct#scct_2.10;0.2.1->org.scala-lang#scala-library;2.10.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scct#sbt-scct;0.2.1->com.github.scct#scct_2.10;0.2.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scct#sbt-scct;0.2.1->com.github.scct#scct_2.10;0.2.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scct#scct_2.10;0.2.1->org.scala-lang#scala-library;2.10.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scct#scct_2.10;0.2.1->org.scala-lang#scala-library;2.10.2 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#hardware_2.10;0.1-SNAPSHOT->com.github.scct#sbt-scct;0.2.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#hardware_2.10;0.1-SNAPSHOT->edu.berkeley.cs#chisel_2.10;latest.release [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#hardware_2.10;0.1-SNAPSHOT->edu.berkeley.cs#chisel_2.10;latest.release [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#hardware_2.10;0.1-SNAPSHOT->edu.berkeley.cs#chisel_2.10;latest.release [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.berkeley.cs#chisel_2.10;latest.release->org.scala-lang#scala-library;2.10.3 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.berkeley.cs#chisel_2.10;latest.release->org.scala-lang#scala-library;2.10.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.berkeley.cs#chisel_2.10;latest.release->com.github.scct#scct_2.10;0.2.1 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.berkeley.cs#chisel_2.10;latest.release->com.github.scct#scct_2.10;0.2.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.berkeley.cs#chisel_2.10;latest.release->org.scala-lang#scala-library;2.10.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.berkeley.cs#chisel_2.10;latest.release->org.scala-lang#scala-library;2.10.3 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.berkeley.cs#chisel_2.10;latest.release->com.github.scct#scct_2.10;0.2.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.berkeley.cs#chisel_2.10;latest.release->com.github.scct#scct_2.10;0.2.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#hardware_2.10;0.1-SNAPSHOT->edu.berkeley.cs#chisel_2.10;latest.release [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#hardware_2.10;0.1-SNAPSHOT [optional][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#hardware_2.10;0.1-SNAPSHOT [provided][0m
+[0m[[0mdebug[0m] [0mresolving dependencies for configuration 'runtime-internal'[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#hardware_2.10;0.1-SNAPSHOT [runtime-internal][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#hardware_2.10;0.1-SNAPSHOT [runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#hardware_2.10;0.1-SNAPSHOT [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#hardware_2.10;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.2 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#hardware_2.10;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.2 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#hardware_2.10;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.2 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#hardware_2.10;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.2 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#hardware_2.10;0.1-SNAPSHOT->com.github.scct#sbt-scct;0.2.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#hardware_2.10;0.1-SNAPSHOT->com.github.scct#sbt-scct;0.2.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#hardware_2.10;0.1-SNAPSHOT->com.github.scct#sbt-scct;0.2.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scct#sbt-scct;0.2.1->com.github.scct#scct_2.10;0.2.1 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scct#sbt-scct;0.2.1->com.github.scct#scct_2.10;0.2.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scct#scct_2.10;0.2.1->org.scala-lang#scala-library;2.10.2 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scct#scct_2.10;0.2.1->org.scala-lang#scala-library;2.10.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scct#sbt-scct;0.2.1->com.github.scct#scct_2.10;0.2.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scct#sbt-scct;0.2.1->com.github.scct#scct_2.10;0.2.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scct#scct_2.10;0.2.1->org.scala-lang#scala-library;2.10.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scct#scct_2.10;0.2.1->org.scala-lang#scala-library;2.10.2 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#hardware_2.10;0.1-SNAPSHOT->com.github.scct#sbt-scct;0.2.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#hardware_2.10;0.1-SNAPSHOT->edu.berkeley.cs#chisel_2.10;latest.release [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#hardware_2.10;0.1-SNAPSHOT->edu.berkeley.cs#chisel_2.10;latest.release [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#hardware_2.10;0.1-SNAPSHOT->edu.berkeley.cs#chisel_2.10;latest.release [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.berkeley.cs#chisel_2.10;latest.release->org.scala-lang#scala-library;2.10.3 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.berkeley.cs#chisel_2.10;latest.release->org.scala-lang#scala-library;2.10.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.berkeley.cs#chisel_2.10;latest.release->com.github.scct#scct_2.10;0.2.1 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.berkeley.cs#chisel_2.10;latest.release->com.github.scct#scct_2.10;0.2.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.berkeley.cs#chisel_2.10;latest.release->org.scala-lang#scala-library;2.10.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.berkeley.cs#chisel_2.10;latest.release->org.scala-lang#scala-library;2.10.3 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.berkeley.cs#chisel_2.10;latest.release->com.github.scct#scct_2.10;0.2.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.berkeley.cs#chisel_2.10;latest.release->com.github.scct#scct_2.10;0.2.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#hardware_2.10;0.1-SNAPSHOT->edu.berkeley.cs#chisel_2.10;latest.release [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#hardware_2.10;0.1-SNAPSHOT [optional][0m
+[0m[[0mdebug[0m] [0mresolving dependencies for configuration 'test-internal'[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#hardware_2.10;0.1-SNAPSHOT [test-internal][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#hardware_2.10;0.1-SNAPSHOT [test][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#hardware_2.10;0.1-SNAPSHOT [runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#hardware_2.10;0.1-SNAPSHOT [compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#hardware_2.10;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.2 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#hardware_2.10;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.2 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#hardware_2.10;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.2 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#hardware_2.10;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.2 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#hardware_2.10;0.1-SNAPSHOT->com.github.scct#sbt-scct;0.2.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#hardware_2.10;0.1-SNAPSHOT->com.github.scct#sbt-scct;0.2.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#hardware_2.10;0.1-SNAPSHOT->com.github.scct#sbt-scct;0.2.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scct#sbt-scct;0.2.1->com.github.scct#scct_2.10;0.2.1 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scct#sbt-scct;0.2.1->com.github.scct#scct_2.10;0.2.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scct#scct_2.10;0.2.1->org.scala-lang#scala-library;2.10.2 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scct#scct_2.10;0.2.1->org.scala-lang#scala-library;2.10.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scct#sbt-scct;0.2.1->com.github.scct#scct_2.10;0.2.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scct#sbt-scct;0.2.1->com.github.scct#scct_2.10;0.2.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scct#scct_2.10;0.2.1->org.scala-lang#scala-library;2.10.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.github.scct#scct_2.10;0.2.1->org.scala-lang#scala-library;2.10.2 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#hardware_2.10;0.1-SNAPSHOT->com.github.scct#sbt-scct;0.2.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#hardware_2.10;0.1-SNAPSHOT->edu.berkeley.cs#chisel_2.10;latest.release [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#hardware_2.10;0.1-SNAPSHOT->edu.berkeley.cs#chisel_2.10;latest.release [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#hardware_2.10;0.1-SNAPSHOT->edu.berkeley.cs#chisel_2.10;latest.release [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.berkeley.cs#chisel_2.10;latest.release->org.scala-lang#scala-library;2.10.3 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.berkeley.cs#chisel_2.10;latest.release->org.scala-lang#scala-library;2.10.3 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.berkeley.cs#chisel_2.10;latest.release->com.github.scct#scct_2.10;0.2.1 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.berkeley.cs#chisel_2.10;latest.release->com.github.scct#scct_2.10;0.2.1 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.berkeley.cs#chisel_2.10;latest.release->org.scala-lang#scala-library;2.10.3 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.berkeley.cs#chisel_2.10;latest.release->org.scala-lang#scala-library;2.10.3 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.berkeley.cs#chisel_2.10;latest.release->com.github.scct#scct_2.10;0.2.1 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies edu.berkeley.cs#chisel_2.10;latest.release->com.github.scct#scct_2.10;0.2.1 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#hardware_2.10;0.1-SNAPSHOT->edu.berkeley.cs#chisel_2.10;latest.release [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#hardware_2.10;0.1-SNAPSHOT [optional][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#hardware_2.10;0.1-SNAPSHOT [provided][0m
+[0m[[0mdebug[0m] [0mresolving dependencies for configuration 'plugin'[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#hardware_2.10;0.1-SNAPSHOT [plugin][0m
+[0m[[0mdebug[0m] [0mresolving dependencies for configuration 'sources'[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#hardware_2.10;0.1-SNAPSHOT [sources][0m
+[0m[[0mdebug[0m] [0mresolving dependencies for configuration 'docs'[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#hardware_2.10;0.1-SNAPSHOT [docs][0m
+[0m[[0mdebug[0m] [0mresolving dependencies for configuration 'pom'[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#hardware_2.10;0.1-SNAPSHOT [pom][0m
+[0m[[0mdebug[0m] [0mresolving dependencies for configuration 'scala-tool'[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies for default#hardware_2.10;0.1-SNAPSHOT [scala-tool][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#hardware_2.10;0.1-SNAPSHOT->org.scala-lang#scala-compiler;2.10.2 [scala-tool->default][0m
+[0m[[0minfo[0m] [0mResolving org.scala-lang#scala-compiler;2.10.2 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-lang#scala-compiler;2.10.2 {scala-tool=[default, optional(default)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-compiler;2.10.2[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-lang#scala-compiler;2.10.2[0m
+[0m[[0mdebug[0m] [0m	found org.scala-lang#scala-compiler;2.10.2 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#hardware_2.10;0.1-SNAPSHOT->org.scala-lang#scala-compiler;2.10.2 [scala-tool->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#hardware_2.10;0.1-SNAPSHOT->org.scala-lang#scala-compiler;2.10.2 [scala-tool->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.10.2->org.scala-lang#scala-library;2.10.2 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.10.2->org.scala-lang#scala-library;2.10.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.10.2->org.scala-lang#scala-library;2.10.2 [compile->default][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.10.2->org.scala-lang#scala-library;2.10.2 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.10.2->org.scala-lang#scala-library;2.10.2 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.10.2->org.scala-lang#scala-library;2.10.2 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.10.2->org.scala-lang#scala-library;2.10.2 [compile->optional(default)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.10.2->org.scala-lang#scala-reflect;2.10.2 [compile->master(*)][0m
+[0m[[0minfo[0m] [0mResolving org.scala-lang#scala-reflect;2.10.2 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-lang#scala-reflect;2.10.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-reflect;2.10.2[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-lang#scala-reflect;2.10.2[0m
+[0m[[0mdebug[0m] [0m	found org.scala-lang#scala-reflect;2.10.2 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.10.2->org.scala-lang#scala-reflect;2.10.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.10.2->org.scala-lang#scala-library;2.10.2 [compile->master(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.10.2->org.scala-lang#scala-library;2.10.2 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.10.2->org.scala-lang#scala-library;2.10.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.10.2->org.scala-lang#scala-library;2.10.2 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.10.2->org.scala-lang#scala-reflect;2.10.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.10.2->org.scala-lang#scala-reflect;2.10.2 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.10.2->org.scala-lang#scala-library;2.10.2 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-reflect;2.10.2->org.scala-lang#scala-library;2.10.2 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#hardware_2.10;0.1-SNAPSHOT->org.scala-lang#scala-compiler;2.10.2 [scala-tool->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#hardware_2.10;0.1-SNAPSHOT->org.scala-lang#scala-compiler;2.10.2 [scala-tool->optional(default)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.10.2->org.scala-lang#jline;2.10.2 [optional->master(*)][0m
+[0m[[0minfo[0m] [0mResolving org.scala-lang#jline;2.10.2 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-lang#jline;2.10.2 {optional=[compile(*), master(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#jline;2.10.2[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-lang#jline;2.10.2[0m
+[0m[[0mdebug[0m] [0m	found org.scala-lang#jline;2.10.2 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#scala-compiler;2.10.2->org.scala-lang#jline;2.10.2 [optional->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#jline;2.10.2->org.fusesource.jansi#jansi;1.4 [compile->master(*)][0m
+[0m[[0minfo[0m] [0mResolving org.fusesource.jansi#jansi;1.4 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.fusesource.jansi#jansi;1.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.fusesource.jansi#jansi;1.4[0m
+[0m[[0mdebug[0m] [0m	local: revision in cache: org.fusesource.jansi#jansi;1.4[0m
+[0m[[0mdebug[0m] [0m	found org.fusesource.jansi#jansi;1.4 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.scala-lang#jline;2.10.2->org.fusesource.jansi#jansi;1.4 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#hardware_2.10;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.2 [scala-tool->default][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#hardware_2.10;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.2 [scala-tool->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#hardware_2.10;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.2 [scala-tool->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#hardware_2.10;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.2 [scala-tool->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#hardware_2.10;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.2 [scala-tool->optional(default)][0m
+[0m[[0mdebug[0m] [0m	resolved ivy file produced in /home/duncan/repos/mrchisim/hardware/target/resolution-cache/default/hardware_2.10/0.1-SNAPSHOT/resolved.xml.xml[0m
+[0m[[0mdebug[0m] [0m:: downloading artifacts ::[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-library;2.10.2!scala-library.jar[0m
+[0m[[0mdebug[0m] [0m		tried http://repo1.maven.org/maven2/com/github/scct/sbt-scct_2.10_0.13/0.2.1/sbt-scct-0.2.1.jar[0m
+[0m[[0minfo[0m] [0mdownloading http://repo1.maven.org/maven2/com/github/scct/sbt-scct_2.10_0.13/0.2.1/sbt-scct-0.2.1.jar ...[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/github/scct/sbt-scct_2.10_0.13/0.2.1/sbt-scct-0.2.1.jar[0m
+[0m[[0mdebug[0m] [0m	public: downloading http://repo1.maven.org/maven2/com/github/scct/sbt-scct_2.10_0.13/0.2.1/sbt-scct-0.2.1.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for http://repo1.maven.org/maven2/com/github/scct/sbt-scct_2.10_0.13/0.2.1/sbt-scct-0.2.1.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.github.scct#sbt-scct;0.2.1!sbt-scct.jar (1501ms)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] edu.berkeley.cs#chisel_2.10;2.1!chisel_2.10.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.github.scct#scct_2.10;0.2.1!scct_2.10.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-library;2.10.3!scala-library.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-compiler;2.10.2!scala-compiler.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-reflect;2.10.2!scala-reflect.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#jline;2.10.2!jline.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 2666ms :: artifacts dl 1519ms[0m
+[0m[[0mdebug[0m] [0m	report for default#hardware_2.10;0.1-SNAPSHOT compile produced in /home/duncan/repos/mrchisim/hardware/target/resolution-cache/reports/default-hardware_2.10-compile.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#hardware_2.10;0.1-SNAPSHOT runtime produced in /home/duncan/repos/mrchisim/hardware/target/resolution-cache/reports/default-hardware_2.10-runtime.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#hardware_2.10;0.1-SNAPSHOT test produced in /home/duncan/repos/mrchisim/hardware/target/resolution-cache/reports/default-hardware_2.10-test.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#hardware_2.10;0.1-SNAPSHOT provided produced in /home/duncan/repos/mrchisim/hardware/target/resolution-cache/reports/default-hardware_2.10-provided.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#hardware_2.10;0.1-SNAPSHOT optional produced in /home/duncan/repos/mrchisim/hardware/target/resolution-cache/reports/default-hardware_2.10-optional.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#hardware_2.10;0.1-SNAPSHOT compile-internal produced in /home/duncan/repos/mrchisim/hardware/target/resolution-cache/reports/default-hardware_2.10-compile-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#hardware_2.10;0.1-SNAPSHOT runtime-internal produced in /home/duncan/repos/mrchisim/hardware/target/resolution-cache/reports/default-hardware_2.10-runtime-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#hardware_2.10;0.1-SNAPSHOT test-internal produced in /home/duncan/repos/mrchisim/hardware/target/resolution-cache/reports/default-hardware_2.10-test-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#hardware_2.10;0.1-SNAPSHOT plugin produced in /home/duncan/repos/mrchisim/hardware/target/resolution-cache/reports/default-hardware_2.10-plugin.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#hardware_2.10;0.1-SNAPSHOT sources produced in /home/duncan/repos/mrchisim/hardware/target/resolution-cache/reports/default-hardware_2.10-sources.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#hardware_2.10;0.1-SNAPSHOT docs produced in /home/duncan/repos/mrchisim/hardware/target/resolution-cache/reports/default-hardware_2.10-docs.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#hardware_2.10;0.1-SNAPSHOT pom produced in /home/duncan/repos/mrchisim/hardware/target/resolution-cache/reports/default-hardware_2.10-pom.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#hardware_2.10;0.1-SNAPSHOT scala-tool produced in /home/duncan/repos/mrchisim/hardware/target/resolution-cache/reports/default-hardware_2.10-scala-tool.xml[0m
+[0m[[0mdebug[0m] [0m	resolve done (2666ms resolve - 1519ms download)[0m
+[0m[[0minfo[0m] [0mDone updating.[0m
